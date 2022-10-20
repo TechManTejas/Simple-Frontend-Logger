@@ -1,0 +1,24 @@
+{
+  "name": "simple-frontend-logger",
+  "version": "1.0.0",
+  "description": "Want to save logs during frontend web development in a file? Just use logger.log() and get logs in .log / .txt / .json format",
+  "main": "logger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechManTejas/Simple-Frontend-Logger.git"
+  },
+  "keywords": [
+    "logger",
+    "loggerjs",
+    "frontendlogger"
+  ],
+  "author": "Tejas Vaij",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TechManTejas/Simple-Frontend-Logger/issues"
+  },
+  "homepage": "https://github.com/TechManTejas/Simple-Frontend-Logger#readme"
+}

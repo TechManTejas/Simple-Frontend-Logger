@@ -147,16 +147,22 @@ class Logger {
 
 var logger = new Logger();
 logger.fileFormat = "JSON"
-window.addEventListener('keyup', function (event) {
-    console.log(event.key)
-    if (event.ctrlKey && event.key === logger._save_logs_key) {
-        logger.saveLogs()
-    }
-    if (event.ctrlKey && event.key === logger._console_logs_key) {
-        logger.consoleLogs()
-    }
-    if (event.ctrlKey && event.key === logger._clear_logs_key) {
-        logger.clearLogs()
-    }
-});
-export default logger;
+
+try {
+    window.addEventListener('keyup', function (event) {
+        console.log(event.key)
+        if (event.ctrlKey && event.key === logger._save_logs_key) {
+            logger.saveLogs()
+        }
+        if (event.ctrlKey && event.key === logger._console_logs_key) {
+            logger.consoleLogs()
+        }
+        if (event.ctrlKey && event.key === logger._clear_logs_key) {
+            logger.clearLogs()
+        }
+    });
+} catch (error) {
+    console.warn("WARNING: window not found")
+}
+
+module.exports = logger;
