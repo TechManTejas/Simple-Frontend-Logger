@@ -60,4 +60,4 @@ npm install simple-frontend-logger
 yarn add simple-frontend-logger
 ```
 
-#### Author: [Tejas Vaij]
+#### Author: Tejas Vaij
