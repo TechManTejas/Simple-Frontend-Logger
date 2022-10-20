@@ -16,8 +16,6 @@ class Log{
 
 class Logger {
     // ================================================
-    // Time Settings
-    timeFormat = "DD/MM/YYYY HH:mm:ss"
 
     // Log Level Settings
     // 0 - "ERROR"
@@ -146,7 +144,6 @@ class Logger {
 }
 
 var logger = new Logger();
-logger.fileFormat = "JSON"
 
 try {
     window.addEventListener('keyup', function (event) {
