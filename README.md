@@ -47,7 +47,6 @@ A logger accepts the following parameters:
 | `_console_logs_key`      | `b`       | Press Ctrl+b to log all logs on your console           |
 | `_clear_logs_key`  | `m`     | Press Ctrl+b to clear all logs                  |
 | `fileFormat` | `SIMPLE`                      | Logs are saved in .txt in simple format, `LOG` and `JSON` format are also available |
-| `silent`      | `false`                     | If true, all logs are suppressed |
 
 
 ## Installation
