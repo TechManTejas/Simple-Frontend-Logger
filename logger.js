@@ -16,7 +16,6 @@ class Log{
 
 class Logger {
     // ================================================
-
     // Log Level Settings
     // 0 - "ERROR"
     // 1 - "WARN"
@@ -147,7 +146,6 @@ var logger = new Logger();
 
 try {
     window.addEventListener('keyup', function (event) {
-        console.log(event.key)
         if (event.ctrlKey && event.key === logger._save_logs_key) {
             logger.saveLogs()
         }
@@ -159,7 +157,7 @@ try {
         }
     });
 } catch (error) {
-    console.warn("WARNING: window not found")
+    console.warn("WARNING: window not found! key binding for saveLogs(), consoleLogs() and clearLogs() will be ignored. You will need to manually call these functions in your code")
 }
 
 module.exports = logger;
