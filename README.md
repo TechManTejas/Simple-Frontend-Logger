@@ -38,18 +38,23 @@ const levels = {
 };
 ```
 
-A logger has following member functions and methods:
+A logger has following member variables:
 
 | Name          | Default                     |  Description    |
 | ------------- | --------------------------- | --------------- |
-| `level`       | `3`                    | Log only if log level of message is less than or equal to this level  |
-| `fileFormat` | `SIMPLE`                      | Logs are saved in .txt in simple format, `LOG` and `JSON` format are also available |
-| `_save_logs_key`      | `q` | Press Ctrl+`q` to save logs on your machine            |
-| `_console_logs_key`      | `b`       | Press Ctrl+`b` to log all logs on your console           |
-| `_clear_logs_key`  | `m`     | Press Ctrl+`m` to clear all logs                  |
-| `saveLogs()`  | `q`     | Downloads logs on your machine                  |
-| `consoleLogs()`  | `b`     | console.log() all logs              |
-| `clearLogs()`  | `m`     | Clears all existing logs                  |
+| `level`       | `3`                         | Log only if log level of message is less than or equal to this level |
+| `fileFormat` | `SIMPLE`                     | Logs are saved in .txt in simple format, `LOG` and `JSON` format are also available |
+| `_save_logs_key` | `q`                      | Press Ctrl+`q` to save logs on your machine |
+| `_console_logs_key` | `b`                   | Press Ctrl+`b` to log all logs on your console |
+| `_clear_logs_key` | `m`                     | Press Ctrl+`m` to clear all logs |
+
+A logger has following methods:
+
+| Name          | Description    |
+| ------------- | --------------- |
+| `saveLogs()` | Downloads logs on your machine |
+| `consoleLogs()` | console.log() all logs |
+| `clearLogs()` | Clears all existing logs |
 
 
 ## Installation
